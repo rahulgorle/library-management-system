@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="login-page.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body>
+  <div class="container">
+    <h1>User Signup</h1>
+    <form id="signup-form">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+    <p id="or-styling">(or)</p>
+  </div>
+  <div class="container">
+    <h1>Already Have an account?<br>Login with Social Media</h1>
+    <div class="login-options">
+      <a href="#" class="btn btn-outline-primary" id="email-login">
+        <i class="bi bi-envelope-fill me-2"></i>Login with Email
+      </a>
+      <a href="#" class="btn btn-outline-primary" id="google-login">
+        <i class="bi bi-google me-2"></i>Login with Google
+      </a>
+      <a href="#" class="btn btn-outline-primary" id="facebook-login">
+        <i class="bi bi-facebook me-2"></i>Login with Facebook
+      </a>
+      <a href="#" class="btn btn-outline-primary" id="twitter-login">
+        <i class="bi bi-twitter me-2"></i>Login with Twitter
+      </a>
+    </div>
+  </div>
+
+  <script src="login-page.js"></script>
+  <script>
+    document.getElementById('email-login').addEventListener('click', function(event) {
+      event.preventDefault();
+      // Open Gmail login page
+      window.location.href = 'https://accounts.google.com/';
+    });
+  </script>
+</body>
+</html>

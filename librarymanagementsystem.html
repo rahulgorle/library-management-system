@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management System</title>
+  <link rel="stylesheet" href="librarymanagementsystem.css">
+</head>
+<body>
+  <header>
+    <div></div>
+    <h1 style="color: aliceblue;">Welcome to the Library Management System</h1><hr>
+    <div>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#" >Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#cart">Cart</a></li>
+        <li><a href="login-page.html" target="blank">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search for a book">
+      <button id="search-button">Search</button>
+    </div>
+    <div id="search-results"></div>
+  </section>
+  
+
+  <main>
+    <section id="features">
+        <h2>Features</h2>
+        <div class="feature">
+          <h3>Book Search</h3>
+          <p>Search for books in our extensive library collection.</p>
+          <button class="feature-btn">Learn More</button>
+        </div>
+        <div class="feature">
+          <h3>Online Catalog</h3>
+          <p>Access our online catalog to view available books.</p>
+          <button class="feature-btn">Learn More</button>
+        </div>
+        <div class="feature">
+          <h3>Borrowing History</h3>
+          <p>Keep track of your borrowing history and due dates.</p>
+          <button class="feature-btn">Learn More</button>
+        </div>
+      </section>
+      
+
+      <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+          <i class="fas fa-book-open"></i>
+          <h3>Book Rental</h3>
+          <p>Explore our vast collection of books and rent them for your reading pleasure.</p>
+        </div>
+        <div class="service">
+          <i class="fas fa-users"></i>
+          <h3>Community Events</h3>
+          <p>Join our community events, such as book clubs and author meetups, to connect with other book enthusiasts.</p>
+        </div>
+        <div class="service">
+          <i class="fas fa-search"></i>
+          <h3>Book Recommendations</h3>
+          <p>Get personalized book recommendations from our knowledgeable librarians.</p>
+        </div>
+      </section>
+      
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+      
+
+      <section id="cart">
+        <h2>My Cart</h2>
+        <div id="cart-items">
+          <!-- Cart items will be dynamically added here -->
+        </div>
+        <div id="cart-total">
+          <p>Total: $0.00</p>
+          <button id="checkout-btn">Checkout</button>
+        </div>
+      </section>
+      
+
+    </main>
+  <script src="librarymanagementsystem.js"></script>
+</body>
+</html>
